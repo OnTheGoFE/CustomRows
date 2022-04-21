@@ -1,16 +1,20 @@
 PODS:
+  - Bluebird (5.1.0)
   - Eureka (5.3.4)
 
 DEPENDENCIES:
-  - Eureka (~> 5.3.2)
+  - Bluebird (~> 5.0)
+  - Eureka
 
 SPEC REPOS:
   trunk:
+    - Bluebird
     - Eureka
 
 SPEC CHECKSUMS:
+  Bluebird: 95e4bc15d519755db9068604695c7c2e710ba4c3
   Eureka: 60cf058f86a8fb3ed26165ba5292b9850361b0a6
 
-PODFILE CHECKSUM: eabf5b53a01e3dcd549b54e500e3181a42474382
+PODFILE CHECKSUM: c68d5b2a4e2d36868b81bc8cdbb14df1e4706df8
 
 COCOAPODS: 1.11.2

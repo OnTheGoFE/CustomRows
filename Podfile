@@ -7,4 +7,5 @@ target 'EurekaDemo' do
 
   # Pods for EurekaDemo
   pod 'Eureka'
+  pod 'Bluebird', '~> 5.0'
 end

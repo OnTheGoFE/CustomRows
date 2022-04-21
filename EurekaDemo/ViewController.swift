@@ -7,6 +7,7 @@
 
 import UIKit
 import Eureka
+import Bluebird
 
 class ViewController: FormViewController {
 
@@ -26,7 +27,31 @@ class ViewController: FormViewController {
                     <<< TextoRow("ABC")
         print("Wait")
         
+        self.getString("A")
+            .then { value in
+                print("Valor: \(value)")
+            }.catch { error in
+                print(error.localizedDescription)
+            }
+        
     }
 
 }
 
+extension FormViewController{
+    
+    func getString(_ code: String) -> Promise<String>{
+        
+        return Promise<String>{ resolve, reject in
+            
+            if code == "A"{
+                resolve("A")
+            }else{
+                reject(NSError(domain: "com.digipro", code: 0, userInfo: nil))
+            }
+            
+        }
+        
+    }
+    
+}

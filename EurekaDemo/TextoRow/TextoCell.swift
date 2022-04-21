@@ -15,7 +15,15 @@ public class TextoCell: Cell<String>, CellType {
     @IBOutlet weak var btntest: UIButton!
     @IBAction func testAction(_ sender: Any) {
         print("Test Action printed")
-        self.formViewController()?.present(controller!, animated: true, completion: nil)
+        
+        //self.genericRow.hidden = true
+        //self.genericRow.evaluateHidden()
+        
+        //self.genericRow.disabled = true
+        //self.genericRow.evaluateDisabled()
+
+        print(self.genericRow.isValid)
+        //self.formViewController()?.present(controller!, animated: true, completion: nil)
     }
     
     override open func update() {
