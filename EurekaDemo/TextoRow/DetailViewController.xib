@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="EurekaDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="btnReturn" destination="RHX-3a-DGz" id="dMg-5u-DRu"/>
+                <outlet property="view" destination="LyO-nt-mfm" id="4Hq-0J-rue"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LyO-nt-mfm">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHX-3a-DGz">
+                    <rect key="frame" x="50" y="94" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="3Wg-pk-Myc"/>
+                        <constraint firstAttribute="height" constant="40" id="nzZ-ip-LPK"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Prueba del Detail Viewcontroller"/>
+                    <connections>
+                        <action selector="btnReturnAction:" destination="-1" eventType="touchUpInside" id="T8g-KJ-wGZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ZbK-ah-iTZ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RHX-3a-DGz" firstAttribute="leading" secondItem="ZbK-ah-iTZ" secondAttribute="leading" constant="50" id="Pak-Zm-kaB"/>
+                <constraint firstItem="RHX-3a-DGz" firstAttribute="top" secondItem="ZbK-ah-iTZ" secondAttribute="top" constant="50" id="sTd-jH-Nvk"/>
+            </constraints>
+            <point key="canvasLocation" x="-372" y="44"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
